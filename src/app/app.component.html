@@ -1,1 +1,64 @@
-hello world from ariel
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <div class="container">
+    <div class="navbar-header">
+      <button
+        class="navbar-toggler mx-1"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--Link logo-->
+      <a class="navbar-brand mx-1" href="#home">
+        <img width="60" height="60" src="" alt="" />
+        <!--Titulo Logo-->
+        <h5 class="d-inline align-middle mx-1 text-light">Logo Mascotas</h5>
+        <!--Titulo Logo-->
+      </a>
+      <!--//Link logo-->
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <!--Link Documentos-->
+        <li class="nav-item">
+          <a
+            href=""
+            class="nav-link text-light"
+            [routerLink]="['/link1']"
+            routerLinkActive="router-link-active"
+            >link 1</a
+          >
+        </li>
+        <!--//Link Documentos-->
+        <!--Link Puestos-->
+        <li class="nav-item">
+          <a
+            href=""
+            [routerLink]="['/link2']"
+            routerLinkActive="router-link-active"
+            class="nav-link text-light "
+            >link 2</a
+          >
+        </li>
+        <!--//Link Puestos-->
+        <!--Link Notificaciones-->
+        <li class="nav-item">
+          <a href="" class="nav-link text-light ">link 3</a>
+        </li>
+        <!--//Link Notificaciones-->
+        <!--Link Configuraciones-->
+        <li class="nav-item">
+          <a href="" class="nav-link text-light ">link 4</a>
+        </li>
+        <!--//Link Configuraciones-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <h1>Principal</h1>
+</div>
+
+<!--//Navbar-->
+<router-outlet></router-outlet>
